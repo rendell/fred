@@ -36,7 +36,6 @@ global.brent.crude <-POILBREUSDM
 rm(POILBREUSDM)
 
 #To create a nice interactive time series graph with a range
-selector:
 dygraph(food.at.home, main="Food at Home (U.S.)",
 ylab="Index")%>% 
   dyRangeSelector()%>% 
