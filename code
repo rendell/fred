@@ -4,27 +4,35 @@ library(dygraphs)
 # All data are non seasonally adjusted 
 getSymbols('CUUR0000SAF11',src='FRED')
 food.at.home <- CUUR0000SAF11
+rm(CUUR0000SAF11)
 
 getSymbols('CUUR0000SAF111',src='FRED')
 cereals.and.bakery.products <-CUUR0000SAF111
+rm(CUUR0000SAF111)
 
 getSymbols('CUUR0000SAF112',src='FRED')
 meat.poulty.fish.and.eggs <-CUUR0000SAF112
+rm(CUUR0000SAF112)
 
 getSymbols('CUUR0000SEFJ',src='FRED')
 dairy.and.related.products <-CUUR0000SEFJ
+rm(CUUR0000SEFJ)
 
 getSymbols('CUUR0000SAF113',src='FRED')
 fruits.and.vegetables <-CUUR0000SAF113
+rm(CUUR0000SAF113)
 
 getSymbols('CUUR0000SAF115',src='FRED')
 other.food.at.home <-CUUR0000SAF115
+rm(CUUR0000SAF115)
 
 getSymbols('MCOILBRENTEU',src='FRED')
 brent.europe <-MCOILBRENTEU
+rm(MCOILBRENTEU)
 
 getSymbols('POILBREUSDM',src='FRED')
 global.brent.crude <-POILBREUSDM
+rm(POILBREUSDM)
 
 #To create a nice interactive time series graph with a range
 selector:
